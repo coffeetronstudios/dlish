@@ -1,0 +1,53 @@
+.header
+{
+    .commerce
+    {
+        background-color: #1b1b1b;
+        overflow: hidden; // clearfix
+
+        .inner
+        {
+            margin: 0 auto;
+            width: @siteWidth;
+
+            .cart-items, .cart
+            {
+                border-left: 1px solid gray;
+                border-right: 1px solid gray;
+                color: #f1e0cc;
+                float: right;
+            }
+        }
+    }
+    
+    .navigation
+    {
+        background-color: #381413;
+        font-family: 'Kenyan Coffee';
+        overflow: hidden; // clearfix
+        
+        .inner
+        {
+            margin: 0 auto;
+            width: @siteWidth;
+
+            ul
+            {
+                list-style: none;
+
+                li
+                {
+                    float: left;
+                    list-style: none;
+                    width: 20%;
+                
+                    a
+                    {
+                        color: #f1e0cc;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
