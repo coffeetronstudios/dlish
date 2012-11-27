@@ -5,8 +5,10 @@
 	.product-image
 	{
         max-width: 100%;
-        max-height: 500px;
         min-width: 1280px;
+        max-height: 500px;
+        display:block;
+        clear:both;
 	}
 
 	// Container for product info div that sits on top of billboard
@@ -18,6 +20,7 @@
         height: 300px;
         position: absolute;
         left: 75%;
+        z-index: 1000000000000;
 
 		// Name of product
 		.product.title
