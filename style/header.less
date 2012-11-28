@@ -1,21 +1,29 @@
 html
 {
-    font-size:62.5%;
+    font-size: 62.5%;
+}
+
+body
+{
+    // 190 is the approximate height of the navigation bar
+    // we'll need to adjust this or set it to a fixed height
+    // later once it's completely corrected
+    padding-top: 190px;
 }
 
 .header
 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
     .commerce
     {
         background-color: #1b1b1b;
         overflow: hidden; // clearfix
         height: 40px;
-        position: fixed;
         min-width: 100%;
-        position: fixed;
-        display: block;
-        top: 0;
-        z-index: 10000000000000;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
 
         // quantity number and cart icon
@@ -45,8 +53,7 @@ html
                 overflow:hidden;
                 padding-right:70px;
                 height:40px;
-
-              }
+            }
         }
     }
 
@@ -58,14 +65,11 @@ html
         font-size: 2.5rem;
         letter-spacing: 0.7rem;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, .5);
-        display: block;
-        position: fixed;
         width: 100%;
 
         .inner
         {
             margin: 0 auto;
-            margin-top: 60px;
             width: @siteWidth;
 
             ul
@@ -83,14 +87,9 @@ html
                     list-style: none;
                     width: 20%;
                     text-align: center;
-                    height: @logoHeight
+                    height: @logoHeight;
                     a:hover {color: #fff5ea;}
                     a:active {color: #f1e0cc;}
-
-                    .logo
-                    {
-	                    background:blue;
-                    }
 
                     a
                     {
