@@ -5,6 +5,18 @@
 <link type="text/css" rel="stylesheet" href="style/application.css" />
 </head>
 <body>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
     <div class="header">
         <div class="commerce">
             <div class="inner">
@@ -15,9 +27,11 @@
         <div class="navigation">
             <div class="inner">
                 <ul>
-                    <li><a href="">TOFFEE</a></li>
+                    <li class="toffe"><a href="">TOFFEE</a></li>
                     <li><a href="">ABOUT</a></li>
-                    <li><a href="">Logo Here</a></li>
+                    
+                    <li class="logo"><a href=""><img src='images/logo.png'></a></li> <!--logo-->
+                    
                     <li><a href="">ARTICLES</a></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
