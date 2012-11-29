@@ -1,3 +1,4 @@
+
 html
 {
     font-size: 62.5%;
@@ -20,13 +21,13 @@ body
 
     .commerce
     {
-        background-color: #1b1b1b;
+        background-color: #1c1c1c;
         overflow: hidden; // clearfix
         height: 40px;
         min-width: 100%;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
 
-        // quantity number and cart icon
+
         .inner
         {
             margin: 0 auto;
@@ -40,6 +41,7 @@ body
             margin-left:20%;
             position:relative;
 
+            // quantity number and cart icon
             .cart-items, .cart
             {
                 border-left: 1px solid gray;
@@ -53,14 +55,16 @@ body
                 overflow:hidden;
                 padding-right:70px;
                 height:40px;
+                background:blue;
             }
         }
     }
 
+    //main navigation area below commerce
     .navigation
     {
         .clearfix;
-        background-color: #381413;
+        background-color: @header-gradient;
         font-family: 'Kenyan Coffee';
         font-size: 2.5rem;
         letter-spacing: 0.7rem;
