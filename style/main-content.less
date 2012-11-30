@@ -4,7 +4,6 @@
     max-width: 25%;
     height: 50px;
     background: orange;
-    margin-bottom: 30px;
     margin-right: 0;
     margin-left: auto;
 
@@ -15,6 +14,7 @@
     }
 }
 
+
 //all content below billboard or nav
 .main-content
 {
@@ -23,28 +23,34 @@
     width:100%;
     text-align: justify;
     padding-bottom: 150px;
-    background: #f3f3f3;
-    box-shadow: 10px 10px 5px black;
+    background: #f9f9f9;
+    margin:0 auto;
+}
 
+//generic class to be used as an extension for adding extra buffer space
+.seperator
+{
+margin-top:120px;
 }
 
 //container for content below billboard or nav
 .main-content-container
 {
-    width:55%;
-    margin-left:22%;
-    padding-top:100px;
+    width:940px;
+    padding-top:15px;
+    margin:0 auto;
 }
 
 //header across all pages; "Articles", "Why Organic", "Payment", etc.
-.header
+.title-head
 {
-    font-family: 'Bebas Neue';
-    font-size: 2.5em;
-    color: #697e2c;
+    font-family: 'Kenyan Coffee';
+    font-size: 3.0em;
+    color: #333333;
     display: block;
     letter-spacing: 5px;
     padding-bottom: 50px;
+    position:static;
 
     .line
     {
@@ -63,7 +69,7 @@
 }
 
 // container for content blocks; sub-heads, and body copy
-.content-container
+.list-container
 {
     line-height: 30px;
 
@@ -73,7 +79,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
 
-        // name of the reason
+        // name of the reason, article name, dates, and form titles
         .sub-head
         {
             font-family: 'Bebas Neue';
@@ -84,7 +90,7 @@
             padding-bottom: 15px;
         }
 
-        // description of the reason
+        // general body copy, "paragraph" text
         .body-copy
         {
             font-family: Maven Pro;
