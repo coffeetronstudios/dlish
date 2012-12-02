@@ -1,16 +1,24 @@
 // social networking links are outside why-organic-container
 .social
 {
-    max-width: 25%;
-    height: 50px;
-    background: orange;
+    max-width: 100%;
+    height: 100px;
+    background: white;
     margin-right: 0;
     margin-left: auto;
+    margin-top:10px;
 
-    // div container for each social networking link; Facebook, G+, and Twitter
-    .link
+    //link for each social networking icon
+    .social-link
     {
-
+        background:blue;
+        height:30px;
+        width:75px;
+        display:inline-block;
+        float:right;
+        margin-left:5px;
+        margin-right:5px;
+        color:white;
     }
 }
 
@@ -20,11 +28,11 @@
 {
     z-index: 99999999;
     display: block;
-    width:100%;
+    width:940px;
     text-align: justify;
     padding-bottom: 150px;
-    background: #f9f9f9;
     margin:0 auto;
+    background:green;
 }
 
 //generic class to be used as an extension for adding extra buffer space
@@ -33,12 +41,29 @@
 margin-top:120px;
 }
 
+//"More" content on left side of page
+.side-content
+{
+    width:210px;
+    float:right;
+    height:300px;
+    display:block;
+    overflow:none;
+    background:blue;
+
+    //something else is pushing the text
+    //down here. we'll need to fix this later.
+    padding-top:15px;
+}
+
 //container for content below billboard or nav
+//site width is 940px
 .main-content-container
 {
-    width:940px;
+    width:730px;
     padding-top:15px;
-    margin:0 auto;
+    background:red;
+    position:relative;
 }
 
 //header across all pages; "Articles", "Why Organic", "Payment", etc.
@@ -55,6 +80,16 @@ margin-top:120px;
     .line
     {
         display: block;
+        /* Gradient color1 - color2 - color1 */
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: -webkit-linear-gradient(left, #333, #ccc); 
+        background-image:    -moz-linear-gradient(left, #333, #ccc); 
+        background-image:     -ms-linear-gradient(left, #333, #ccc); 
+        background-image:      -o-linear-gradient(left, #333, #ccc); 
+        margin-top:40px;
+        margin-bottom:20px;
     }
 
     .header-copy
@@ -71,7 +106,7 @@ margin-top:120px;
 // container for content blocks; sub-heads, and body copy
 .list-container
 {
-    line-height: 30px;
+    line-height: 40px;
 
     // base content div to be used across all pages for sub-heads + body
     .content-block
@@ -97,6 +132,7 @@ margin-top:120px;
             padding-left: 20px;
             font-size: 1.2em;
             color: #9f9f9f;
+            line-height: 28px;
         }
     }
 }
