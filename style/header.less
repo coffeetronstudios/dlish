@@ -1,4 +1,3 @@
-
 html
 {
     font-size: 62.5%;
@@ -9,7 +8,6 @@ body
     // 190 is the approximate height of the navigation bar
     // we'll need to adjust this or set it to a fixed height
     // later once it's completely corrected
-
 }
 
 .header
@@ -21,59 +19,58 @@ body
     .commerce
     {
         background-color: #1c1c1c;
-        overflow: hidden; // clearfix
-        height: 46px;
-        min-width: 100%;
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
-
+        width: 100%;
+        .box-shadow(0px 1px 4px rgba(0, 0, 0, .2));
 
         .inner
         {
+            .clearfix;
             margin: 0 auto;
-            padding-top: 10px;
-            max-width:940px;
-            position:relative;
+            max-width: @siteWidth;
+
+            // the quantity number and cart icon will get floated left within
+            // this container, which itself is floated right... this way we
+            // can order the divs in the HTML the same order as they will
+            // appear, instead of having to reverse them to use float:right directly
+            .inner-items
+            {
+                float: right;
+            }
 
             // quantity number and cart icon
-            .cart-items,
+            .cart-items, .cart
             {
                 border-left: 1px solid gray;
-                border-right: 1px solid gray;
-                color: #e0e0e0;
-                float: right;
-                text-align:center;
-                display:block;
-                overflow:hidden;
-                height:40px;
+                display: block;
+                float: left;
                 font-family: 'Kenyan Coffee';
-                font-size:18px;
-                width:8%;
-                padding-top:3px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                width: 75px;
             }
-                
+
+            // whichever is last (cart icon or cart quantity) needs a right border
+            &:last-child
+            {
+                border-right: 1px solid gray;
+            }
+
+            .cart-items
+            {
+                color: #e0e0e0;
+                font-size: 18px;
+            }
+
             .cart
             {
-                border-left: 1px solid gray;
-                border-right: 1px solid gray;
                 color: #f1e0cc;
-                float: right;
-                display:block;
-                overflow:hidden;
-                height:40px;
-                font-family: 'Kenyan Coffee';
-                text-align: center;
-                width:8%;
-                padding-top:3px;
-                
+
                 img
                 {
-	                width:21px;
-	                height:18px;
-	                
+	                width: 21px;
+	                height: 18px;
                 }
-	                 
-                 }
-
             }
         }
     }
