@@ -22,51 +22,44 @@
     }
 }
 
-
-//all content below billboard or nav
+// all content below billboard or nav
 .main-content
 {
-    z-index: 99999999;
-    display: block;
-    width:940px;
+    .clearfix;
+    width: @siteWidth;
     text-align: justify;
     padding-bottom: 150px;
-    margin:0 auto;
-    background:green;
+    margin: 0 auto;
+    background: green;
+
+    // width of the sidebar portion
+    @sideContentWidth: 210px;
+
+    // container for content below billboard or nav
+    .main-content-container
+    {
+        width: @siteWidth - @sideContentWidth;
+        background: red;
+    }
+
+    // "More" content on right side of page
+    .side-content
+    {
+        width: @sideContentWidth;
+        float: right;
+        display: block;
+        overflow: none;
+        background: blue;
+    }
 }
 
-//generic class to be used as an extension for adding extra buffer space
-.seperator
+// generic class to be used as an extension for adding extra buffer space
+.separator
 {
-margin-top:120px;
+    margin-top: 120px;
 }
 
-//"More" content on left side of page
-.side-content
-{
-    width:210px;
-    float:right;
-    height:300px;
-    display:block;
-    overflow:none;
-    background:blue;
-
-    //something else is pushing the text
-    //down here. we'll need to fix this later.
-    padding-top:15px;
-}
-
-//container for content below billboard or nav
-//site width is 940px
-.main-content-container
-{
-    width:730px;
-    padding-top:15px;
-    background:red;
-    position:relative;
-}
-
-//header across all pages; "Articles", "Why Organic", "Payment", etc.
+// header across all pages; "Articles", "Why Organic", "Payment", etc.
 .title-head
 {
     font-family: 'Kenyan Coffee';
@@ -74,8 +67,8 @@ margin-top:120px;
     color: #333333;
     display: block;
     letter-spacing: 5px;
+    line-height: normal;
     padding-bottom: 50px;
-    position:static;
 
     .line
     {
@@ -84,10 +77,10 @@ margin-top:120px;
         border: 0;
         height: 1px;
         background: #333;
-        background-image: -webkit-linear-gradient(left, #333, #ccc); 
-        background-image:    -moz-linear-gradient(left, #333, #ccc); 
-        background-image:     -ms-linear-gradient(left, #333, #ccc); 
-        background-image:      -o-linear-gradient(left, #333, #ccc); 
+        background-image: -webkit-linear-gradient(left, #333, #ccc);
+        background-image:    -moz-linear-gradient(left, #333, #ccc);
+        background-image:     -ms-linear-gradient(left, #333, #ccc);
+        background-image:      -o-linear-gradient(left, #333, #ccc);
         margin-top:40px;
         margin-bottom:20px;
     }
