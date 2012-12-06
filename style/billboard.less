@@ -34,10 +34,10 @@
         // Container for product info div that sits on top of billboard
         .product-details
         {
-            @productDetailsWidth: 300px;
+            @productDetailsWidth: 320px;
             position: absolute;
-            bottom: 20px;
-            right: 20px;
+            bottom: 30px;
+            right: 30px;
             width: @productDetailsWidth;
             font-family: 'Kenyan Coffee';
 
@@ -67,11 +67,13 @@
                 .product-price
                 {
                     background-color: white;
-                    border: 2px solid gray;
+                    border: 1px solid #E0C1AF;
                     float: left;
-                    @padding: 4px;
+                    @padding: 15px;
                     padding: @padding;
                     width: (0.6 * @productDetailsWidth) - 4 - (@padding * 2);
+                    font-size:24px;
+                    color:#6b3417;
                 }
 
                 .product-quantity
@@ -84,7 +86,7 @@
                     .user-select(none);
 
                     background-color: white;
-                    border: 2px solid gray;
+                    border: 1px solid #E0C1AF;
                     color: #333; // TODO: where's this come from?
                     float: left;
                     font-family: 'Kenyan Coffee';
@@ -94,23 +96,28 @@
                     @marginLeft: 10px;
                     margin-left: @marginLeft;
                     outline: none;
-                    @padding: 4px;
+                    @padding: 15px;
                     padding: @padding;
                     width: (0.4 * @productDetailsWidth) - 4 - (@padding * 2) - @marginLeft;
+                    color:6b3417;
+                    font-size:24px;
                 }
 
                 // Add to Cart button
                 .add-to-cart
                 {
-                    background-color: maroon;
+                    background-color: #490403;
                     color: white;
                     cursor: pointer;
                     font-family: 'Bebas Neue';
                     float: left;
                     margin-top: 10px;
-                    @padding: 4px;
+                    @padding: 15px;
                     padding: @padding;
                     width: @productDetailsWidth - (@padding * 2);
+                    font-size:24px;
+                    letter-spacing: 2px;
+                    color:#efece2;
                 }
             }
         }

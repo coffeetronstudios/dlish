@@ -4,7 +4,7 @@
     max-width: 100%;
     height: 100px;
     background: white;
-    margin-right: 0;
+    margin-right: 30px;
     margin-left: auto;
     margin-top:10px;
 
@@ -26,7 +26,7 @@
 .main-content
 {
     .clearfix;
-    width: @siteWidth;
+    width: 100%;
     text-align: justify;
     padding-bottom: 150px;
     margin: 0 auto;
@@ -35,10 +35,9 @@
     // width of the sidebar portion
     @sideContentWidth: 210px;
 
-    // container for content below billboard or nav
     .main-content-container
     {
-        width: @siteWidth - @sideContentWidth;
+        width: 100% - @sideContentWidth;
         background: red;
     }
 
@@ -69,6 +68,9 @@
     letter-spacing: 5px;
     line-height: normal;
     padding-bottom: 50px;
+    background:green;
+    width:80%;
+    margin:0 auto;
 
     .line
     {
@@ -106,26 +108,56 @@
     {
         padding-top: 40px;
         padding-bottom: 40px;
+        width:100%;
+        margin:0 auto;
+        height:300px;
+        background:orange;
 
-        // name of the reason, article name, dates, and form titles
-        .sub-head
+        //serves as container for background color, block-text, and block-image
+        .content-block-container 
         {
-            font-family: 'Bebas Neue';
-            letter-spacing: 1px;
-            color: #697e2c;
-            font-size: 25px;
-            padding-top: 25px;
-            padding-bottom: 15px;
-        }
 
-        // general body copy, "paragraph" text
-        .body-copy
-        {
-            font-family: Maven Pro;
-            padding-left: 20px;
-            font-size: 1.2em;
-            color: #9f9f9f;
-            line-height: 28px;
+             .content-block-text
+            {
+            background:gray;
+            width:50%;
+            margin:0 auto;
+            float:left;
+            display:block;
+
+                 // name of the reason, article name, dates, and form titles
+                .sub-head
+                {
+                font-family: 'Bebas Neue';
+                letter-spacing: 1px;
+                color: #697e2c;
+                font-size: 25px;
+                padding-top: 25px;
+                padding-bottom: 15px;
+                width:50%;
+                }
+
+                // general body copy, "paragraph" text
+                .body-copy
+                {
+                font-family: Maven Pro;
+                padding-left: 20px;
+                font-size: 1.2em;
+                color: #9f9f9f;
+                line-height: 28px;
+                }
+            }
+
+            .content-block-image
+            {
+            background:black;
+            width:50%;
+            float:right;
+            text-align:justify;
+            display:block;
+            }
+
         }
     }
+       
 }
