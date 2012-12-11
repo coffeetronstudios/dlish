@@ -27,10 +27,8 @@
 {
     .clearfix;
     width: 100%;
-    text-align: justify;
     padding-bottom: 150px;
     margin: 0 auto;
-    background: green;
 
     // width of the sidebar portion
     @sideContentWidth: 210px;
@@ -38,17 +36,22 @@
     .main-content-container
     {
         width: 100%;
-        background: red;
     }
 
     // "More" content on right side of page
-    .side-content
+    .side-content 
     {
         width: @sideContentWidth;
         float: right;
-        display: block;
+        display: block;     
         overflow: none;
-        background: blue;
+        margin-right:16%;
+        color:;
+
+        .side-content-subs //sub-heads for side content
+        { 
+
+        }
     }
 }
 
@@ -63,16 +66,18 @@
 {
     font-family: 'Kenyan Coffee';
     font-size: 3.0em;
-    color: #333333;
+    color: #531e00;
     display: block;
     letter-spacing: 5px;
     line-height: normal;
-    padding-bottom: 50px;
-    background:green;
+    padding-bottom: 140px;
     width:80%;
     margin:0 auto;
+    //colors for different title-heads
+    &.grey{color:#777777;}
 
-    .line
+
+    .line  //TODO : change width of line so end at it ends at the 's' in 'Articles' in Nav
     {
         display: block;
         /* Gradient color1 - color2 - color1 */
@@ -84,17 +89,21 @@
         background-image:     -ms-linear-gradient(left, #333, #ccc);
         background-image:      -o-linear-gradient(left, #333, #ccc);
         margin-top:40px;
-        margin-bottom:20px;
+        margin-bottom:20px
+        background:blue;
+        &.long {width:70%;}
+        &.short {width:100%;}
     }
 
     .header-copy
     {
-        color: #686868;
+        color: #868686;
         font-family: 'Lucida Grande';
         font-size: 15px;
         letter-spacing: 2px;
         line-height: 30px;
         padding-top: 25px;
+        width:60%;
     }
 }
 
@@ -104,47 +113,60 @@
     line-height: 40px;
 
     // base content div to be used across all pages for sub-heads + body
-    .content-block
+    .content-block 
     {
-        padding-top: 40px;
-        padding-bottom: 40px;
         width:100%;
         margin:0 auto;
-        height:300px;
+        height:500px;
         background:orange;
+
+         //font colors for content blocks
+        @green:#6e8037;
+        @cream:#f9faea;
+        @grey:#777777;
+        @tan:#eedec2;
+
+        //background and font colors for content blocks
+        &.green{.green-gradient; color:@cream;}
+        &.grey{.pollution-gradient; color:@gray;}
+        &.light-grey{.light-grey-gradient; color:@grey;}
+        &.brown{.brown-gradient; color:@tan;}
+        &.cream{.cream-gradient; color: @green;}
+
+
 
         //serves as container for background color, block-text, and block-image
         .content-block-container
         {
             margin: 0 auto;
             width: 80%;
+
              .content-block-text
             {
-            background:gray;
             width:50%;
             margin:0 auto;
             float:left;
             display:block;
+            padding-top:140px;
+
+            &.right{float:right;}
+            &.left{float:left;}
 
                  // name of the reason, article name, dates, and form titles
                 .sub-head
                 {
-                font-family: 'Bebas Neue';
                 letter-spacing: 1px;
-                color: #697e2c;
-                font-size: 25px;
-                padding-top: 25px;
-                padding-bottom: 15px;
-                width:50%;
+                font-size: 40px;
+                padding-top: 1px;
+                padding-bottom: 10px;
+                width:100%;
+                font-family: 'Maven Pro';
                 }
 
                 // general body copy, "paragraph" text
                 .body-copy
                 {
-                font-family: Maven Pro;
-                padding-left: 20px;
                 font-size: 1.2em;
-                color: #9f9f9f;
                 line-height: 28px;
                 }
             }
