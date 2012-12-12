@@ -22,12 +22,57 @@
     }
 }
 
+// "More" content on right side of page
+//TODO align side-content with left side of "contact" in
+.side-content 
+{
+ float: right;
+display: block;     
+overflow: none;
+color:gray;
+
+        // title for side content
+        .side-title
+        {
+        font-family: 'Kenyan Coffee';
+        font-size:40px;
+        color: #531e00;
+        display: block;
+        letter-spacing: 5px;
+        line-height: normal;
+        margin:0 auto;
+        //colors for different title-heads
+        &.grey{color:#777777;}
+        }
+
+        .side-content-subs //sub-heads for side content
+        { 
+            .sub
+            {
+            font-size:50%;
+            line-height: 50px;
+                .GT
+                {
+                display:inline-block; 
+                font-size:70%;     
+                font-family: 'citizen_slabregular';
+                }
+            }
+        }
+    }
+
+    // generic class to be used as an extension for adding extra buffer space
+    .separator
+    {
+    margin-top: 120px;
+    }
+
+
 // all content below billboard or nav
 .main-content
 {
     .clearfix;
     width: 100%;
-    padding-bottom: 150px;
     margin: 0 auto;
 
     // width of the sidebar portion
@@ -36,49 +81,28 @@
     .main-content-container
     {
         width: 100%;
-    }
+        padding-top:100px;
+        padding-bottom:100px;
 
-    // "More" content on right side of page
-    .side-content 
-    {
-        width: @sideContentWidth;
-        float: right;
-        display: block;     
-        overflow: none;
-        margin-right:16%;
-        color:;
-
-        .side-content-subs //sub-heads for side content
-        { 
-
+        // header across all pages; "Articles", "Why Organic", "Payment", etc.
+        .title-head
+        {
+        font-family: 'Kenyan Coffee';
+        font-size:40px;
+        color: #531e00;
+        display: block;
+        letter-spacing: 5px;
+        line-height: normal;
+        width:80%;
+        margin:0 auto;
+        //colors for different title-heads
+        &.grey{color:#777777;
+        &.black{color:black;}
         }
-    }
-}
-
-// generic class to be used as an extension for adding extra buffer space
-.separator
-{
-    margin-top: 120px;
-}
-
-// header across all pages; "Articles", "Why Organic", "Payment", etc.
-.title-head
-{
-    font-family: 'Kenyan Coffee';
-    font-size: 3.0em;
-    color: #531e00;
-    display: block;
-    letter-spacing: 5px;
-    line-height: normal;
-    padding-bottom: 140px;
-    width:80%;
-    margin:0 auto;
-    //colors for different title-heads
-    &.grey{color:#777777;}
 
 
-    .line  //TODO : change width of line so end at it ends at the 's' in 'Articles' in Nav
-    {
+        .line  //TODO : change width of line so end at it ends at the 's' in 'Articles' in Nav
+        {
         display: block;
         /* Gradient color1 - color2 - color1 */
         border: 0;
@@ -89,14 +113,13 @@
         background-image:     -ms-linear-gradient(left, #333, #ccc);
         background-image:      -o-linear-gradient(left, #333, #ccc);
         margin-top:40px;
-        margin-bottom:20px
-        background:blue;
+        margin-bottom:20px;
         &.long {width:70%;}
         &.short {width:100%;}
-    }
+        }
 
-    .header-copy
-    {
+        .header-copy
+        {
         color: #868686;
         font-family: 'Lucida Grande';
         font-size: 15px;
@@ -104,8 +127,14 @@
         line-height: 30px;
         padding-top: 25px;
         width:60%;
+        }
     }
 }
+
+
+}
+
+
 
 // container for content blocks; sub-heads, and body copy
 .list-container
@@ -118,7 +147,6 @@
         width:100%;
         margin:0 auto;
         height:500px;
-        background:orange;
 
          //font colors for content blocks
         @green:#6e8037;
