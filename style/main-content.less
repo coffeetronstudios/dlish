@@ -80,20 +80,21 @@ color:gray;
 
     .main-content-container
     {
-        width: 100%;
         padding-top:100px;
         padding-bottom:100px;
+        //for use on text-based pages like Guarantee, Shipping, Etc.
+        &.text-based{width:960px; margin:0 auto;}
+        //for use on Product
+        &.content-based{width:80%; margin:0 auto;}
 
         // header across all pages; "Articles", "Why Organic", "Payment", etc.
         .title-head
         {
         font-family: 'Kenyan Coffee';
         font-size:40px;
-        color: #531e00;
         display: block;
         letter-spacing: 5px;
         line-height: normal;
-        width:80%;
         margin:0 auto;
         //colors for different title-heads
         &.grey{color:#777777;
@@ -126,7 +127,7 @@ color:gray;
         letter-spacing: 2px;
         line-height: 30px;
         padding-top: 25px;
-        width:60%;
+        width:70%;
         }
     }
 }
