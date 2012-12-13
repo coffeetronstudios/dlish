@@ -47,12 +47,15 @@
 
 //cart-box = cart title + cart amount.
 //cart title and cart amount sit within containers called cart-container
-.cart-box  //TODO - position cart-box to be fixed on page
+.cart-box
 {
-	width:30%;
+	width: 0.3 * @siteWidth;
 	float:right;
 	height:250px;
 	background:white;
+
+    // Set a margin so the box stays at the same place horizontally in affixed mode
+	&.affix { margin-left: 0.7 * @siteWidth; }
 
 	.cart-container
 	{
