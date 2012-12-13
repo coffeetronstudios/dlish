@@ -1,7 +1,139 @@
 //styles for the forms pages; Shipping Info, Payment Info, and Place Your Order
 
-//title of each section (ex:Shipping Contect)
+
+//title of each form section (ex:Shipping Contect)
 .section-title
 {
-	color:;
+color:#4f5c28;
+font-family: 'Bebas Neue';
+font-size:20px;
+letter-spacing:2px;
+word-spacing:10px;
 }
+
+//container = form title + form box. 
+.form-container
+{
+	display:inline-block;
+	font-size:24px;
+	width:70%;
+	padding-top:30px;
+	padding-bottom:30px;
+
+	.form-title
+	{
+	color:#838872;
+	font-family: 'Bebas Neue';
+	float:left;
+	margin-top:8px;
+	letter-spacing:2px;
+	}
+
+	.form-box
+	{
+		input
+		{
+		float:right;
+		height:30px;
+		width:60%;
+		margin-right:10%;
+		}
+	}
+}
+
+
+//cart-box = cart title + cart amount. 
+//cart title and cart amount sit within containers called cart-container
+.cart-box
+{
+	background:white;
+	width:30%;
+	height:200px;
+	float:right;
+
+	.cart-container
+	{
+	font-family: 'Kenyan Coffee';
+	font-size:20px;
+	padding:20px;
+	letter-spacing:2px;
+	background:blue;
+
+		.cart-line  //wraps cart title and cart amount on 1 line
+		{
+		background:green;
+
+			.cart-title
+			{
+			float:left;
+			&.black{color:black;} //for use with black titles
+			&.grey{color:grey;}   //for use wih grey titles
+			padding-top:15px;
+			padding-bottom:15px;
+			}
+			.cart-amount
+			{
+			color:grey;
+			float:right;
+			}
+		}	
+
+	}
+}
+
+.button-container //helps align the button with the above forms
+{
+display:inline-block;
+width:70%;
+}
+//Button used for "Continue" and "Place Order"
+.button
+{
+background:#b5b5b6;
+float:right;
+margin-right:10%;
+&.big {width:62%} //for use on the big "continue" button
+&.small {width:20%;} //for use on the smaller "back" button
+
+	.button-title
+	{
+	font-family: 'Bebas Neue';
+	font-weight:normal;
+	color:white;
+	text-align: center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size:30px;
+	letter-spacing:2px;
+	}
+
+	.forward  // " > "
+	{
+	float:right;
+	position:inline-block;
+	color:white;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
