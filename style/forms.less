@@ -9,6 +9,9 @@ font-family: 'Bebas Neue';
 font-size:20px;
 letter-spacing:2px;
 word-spacing:10px;
+padding-top:30px;
+padding-bottom:30px;
+width:70%;
 }
 
 //container = form title + form box. 
@@ -44,37 +47,40 @@ word-spacing:10px;
 
 //cart-box = cart title + cart amount. 
 //cart title and cart amount sit within containers called cart-container
-.cart-box
+.cart-box  //TODO - position cart-box to be fixed on page
 {
-	background:white;
 	width:30%;
-	height:200px;
 	float:right;
+	height:250px;
+	background:white;
 
 	.cart-container
 	{
 	font-family: 'Kenyan Coffee';
 	font-size:20px;
-	padding:20px;
 	letter-spacing:2px;
-	background:blue;
+	padding:20px;
 
 		.cart-line  //wraps cart title and cart amount on 1 line
 		{
-		background:green;
+			display:inline-block;
 
-			.cart-title
+			.cart-sub //sub-total, sales tax, total
 			{
-			float:left;
 			&.black{color:black;} //for use with black titles
 			&.grey{color:grey;}   //for use wih grey titles
-			padding-top:15px;
-			padding-bottom:15px;
+			float:left;
+			background:green;
+			width:30%;
+			display:block;
 			}
-			.cart-amount
+
+			.cart-amount  // $ XX . YY
 			{
 			color:grey;
 			float:right;
+			background:orange;
+			width:30%;
 			}
 		}	
 
@@ -86,6 +92,7 @@ word-spacing:10px;
 display:inline-block;
 width:70%;
 }
+
 //Button used for "Continue" and "Place Order"
 .button
 {
@@ -94,6 +101,8 @@ float:right;
 margin-right:10%;
 &.big {width:62%} //for use on the big "continue" button
 &.small {width:20%;} //for use on the smaller "back" button
+div:hover {background: #697a35;}
+.a{display:block;height:100%;}
 
 	.button-title
 	{
