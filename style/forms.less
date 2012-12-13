@@ -4,17 +4,17 @@
 //title of each form section (ex:Shipping Contect)
 .section-title
 {
-color:#4f5c28;
-font-family: 'Bebas Neue';
-font-size:20px;
-letter-spacing:2px;
-word-spacing:10px;
-padding-top:30px;
-padding-bottom:30px;
-width:70%;
+    color:#4f5c28;
+    font-family: 'Bebas Neue';
+    font-size:20px;
+    letter-spacing:2px;
+    word-spacing:10px;
+    padding-top:30px;
+    padding-bottom:30px;
+    width:70%;
 }
 
-//container = form title + form box. 
+//container = form title + form box.
 .form-container
 {
 	display:inline-block;
@@ -25,27 +25,27 @@ width:70%;
 
 	.form-title
 	{
-	color:#838872;
-	font-family: 'Bebas Neue';
-	float:left;
-	margin-top:8px;
-	letter-spacing:2px;
+        color:#838872;
+        font-family: 'Bebas Neue';
+        float:left;
+        margin-top:8px;
+        letter-spacing:2px;
 	}
 
 	.form-box
 	{
 		input
 		{
-		float:right;
-		height:30px;
-		width:60%;
-		margin-right:10%;
+            float:right;
+            height:30px;
+            width:60%;
+            margin-right:10%;
 		}
 	}
 }
 
 
-//cart-box = cart title + cart amount. 
+//cart-box = cart title + cart amount.
 //cart title and cart amount sit within containers called cart-container
 .cart-box  //TODO - position cart-box to be fixed on page
 {
@@ -56,93 +56,69 @@ width:70%;
 
 	.cart-container
 	{
-	font-family: 'Kenyan Coffee';
-	font-size:20px;
-	letter-spacing:2px;
-	padding:20px;
+        font-family: 'Kenyan Coffee';
+        font-size:20px;
+        letter-spacing:2px;
+        padding:20px;
 
 		.cart-line  //wraps cart title and cart amount on 1 line
 		{
-			display:inline-block;
+		    .clearfix;
 
 			.cart-sub //sub-total, sales tax, total
 			{
-			&.black{color:black;} //for use with black titles
-			&.grey{color:grey;}   //for use wih grey titles
-			float:left;
-			background:green;
-			width:30%;
-			display:block;
+                &.black{color:black;} //for use with black titles
+                &.grey{color:grey;}   //for use wih grey titles
+                width:30%;
+                float: left;
 			}
 
 			.cart-amount  // $ XX . YY
 			{
-			color:grey;
-			float:right;
-			background:orange;
-			width:30%;
+			    display: inline-block;
+                color:grey;
+                width:70%;
+                float: left;
+                text-align: right;
 			}
-		}	
+		}
 
 	}
 }
 
 .button-container //helps align the button with the above forms
 {
-display:inline-block;
-width:70%;
+    display:inline-block;
+    width:70%;
 }
 
 //Button used for "Continue" and "Place Order"
 .button
 {
-background:#b5b5b6;
-float:right;
-margin-right:10%;
-&.big {width:62%} //for use on the big "continue" button
-&.small {width:20%;} //for use on the smaller "back" button
-div:hover {background: #697a35;}
-.a{display:block;height:100%;}
+    background:#b5b5b6;
+    float:right;
+    margin-right:10%;
+    &.big {width:62%} //for use on the big "continue" button
+    &.small {width:20%;} //for use on the smaller "back" button
+    div:hover {background: #697a35;}
+    .a{display:block;height:100%;}
 
 	.button-title
 	{
-	font-family: 'Bebas Neue';
-	font-weight:normal;
-	color:white;
-	text-align: center;
-	padding-top:15px;
-	padding-bottom:15px;
-	font-size:30px;
-	letter-spacing:2px;
+        font-family: 'Bebas Neue';
+        font-weight:normal;
+        color:white;
+        text-align: center;
+        padding-top:15px;
+        padding-bottom:15px;
+        font-size:30px;
+        letter-spacing:2px;
 	}
 
 	.forward  // " > "
 	{
-	float:right;
-	position:inline-block;
-	color:white;	
+        float:right;
+        position:inline-block;
+        color:white;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
