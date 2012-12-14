@@ -1,7 +1,7 @@
 //styles for the forms pages; Shipping Info, Payment Info, and Place Your Order
 
 
-//title of each form section (ex:Shipping Contect)
+//title of each form section (ex:Shipping Contact)
 .section-title
 {
     color:#4f5c28;
@@ -12,6 +12,21 @@
     padding-top:30px;
     padding-bottom:30px;
     width:70%;
+
+        .line  //TODO : change width of line so end at it ends at the 's' in 'Articles' in Nav
+        {
+        display: block;
+        /* Gradient color1 - color2*/
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: -webkit-linear-gradient(left, #333, #ccc);
+        background-image:    -moz-linear-gradient(left, #333, #ccc);
+        background-image:     -ms-linear-gradient(left, #333, #ccc);
+        background-image:      -o-linear-gradient(left, #333, #ccc);
+        width:90%;
+        margin-top:10px;
+        }
 }
 
 //container = form title + form box.
@@ -47,7 +62,7 @@
 
 //cart-box = cart title + cart amount.
 //cart title and cart amount sit within containers called cart-container
-.cart-box
+.cart-box //TODO : stop cart-box flow at bottom of "zip code" form;
 {
 	width: 0.3 * @siteWidth;
 	float:right;
@@ -55,7 +70,7 @@
 	background:white;
 
     // Set a margin so the box stays at the same place horizontally in affixed mode
-	&.affix { top: 100px; margin-left: 0.7 * @siteWidth; }
+	&.affix { margin-left: 0.7 * @siteWidth;}
 
 	.cart-container
 	{
@@ -67,12 +82,15 @@
 		.cart-line  //wraps cart title and cart amount on 1 line
 		{
 		    .clearfix;
+            &.buffer-bottom{padding-bottom:30px;}
+            &.buffer-top{padding-top:30px;}
+            padding-bottom:15px;
 
 			.cart-sub //sub-total, sales tax, total
 			{
                 &.black{color:black;} //for use with black titles
                 &.grey{color:grey;}   //for use wih grey titles
-                width:30%;
+                width:50%;
                 float: left;
 			}
 
@@ -80,7 +98,7 @@
 			{
 			    display: inline-block;
                 color:grey;
-                width:70%;
+                width:45%;
                 float: left;
                 text-align: right;
 			}
@@ -125,3 +143,9 @@
         color:white;
 	}
 }
+
+
+
+
+
+
