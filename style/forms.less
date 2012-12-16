@@ -35,6 +35,7 @@
 	display:inline-block;
 	font-size:24px;
 	width:70%;
+    &.submissions{width:100%;}
 	padding-top:30px;
 	padding-bottom:30px;
 
@@ -45,6 +46,7 @@
         float:left;
         margin-top:8px;
         letter-spacing:2px;
+        font-size:20px;
 	}
 
 	.form-box
@@ -53,7 +55,9 @@
 		{
             float:right;
             height:30px;
-            width:60%;
+            &.message{height:400px;}
+            width:65%;
+            &.submissions{width:75%; margin:0;}
             margin-right:10%;
 		}
 	}
@@ -62,7 +66,9 @@
 
 //cart-box = cart title + cart amount.
 //cart title and cart amount sit within containers called cart-container
-.cart-box //TODO : stop cart-box flow at bottom of "zip code" form;
+//TODO : stop cart-box flow at bottom of "zip code" form;
+//TODO : make cart-box flow downwards instead of 'jump' on scroll;
+.cart-box 
 {
 	width: 0.3 * @siteWidth;
 	float:right;
@@ -111,6 +117,7 @@
 {
     display:inline-block;
     width:70%;
+    &.submissions{width:100%;}
 }
 
 //Button used for "Continue" and "Place Order"
@@ -119,8 +126,9 @@
     background:#b5b5b6;
     float:right;
     margin-right:10%;
-    &.big {width:62%} //for use on the big "continue" button
+    &.big {width:90%} //for use on the big "continue" button
     &.small {width:20%;} //for use on the smaller "back" button
+    &.submissions{width:100%;margin:0;}//for use on Become a Retailer, Contact Us
     div:hover {background: #697a35;}
     .a{display:block;height:100%;}
 
@@ -142,6 +150,17 @@
         position:inline-block;
         color:white;
 	}
+}
+
+.check-box
+{
+    display:block;
+
+    input
+    {
+        margin-left:20px;
+        margin-top:10px;
+    }
 }
 
 
