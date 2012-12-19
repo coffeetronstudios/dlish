@@ -47,6 +47,7 @@
         margin-top:8px;
         letter-spacing:2px;
         font-size:20px;
+        line-height:25px;
 	}
 
 	.form-box
@@ -55,11 +56,32 @@
 		{
             float:right;
             height:30px;
-            &.message{height:400px;}
+            &.messages{height:200px; width:75%; margin:0;}
             width:65%;
             &.submissions{width:75%; margin:0;}
             margin-right:10%;
+            font-size:25px;
+            font-family: 'Kenyan Coffee';
+            letter-spacing:1px;
+            font-style:normal;
 		}
+
+        textarea
+        {
+            float:right;
+            height:30px;
+            &.messages{height:200px; width:75% !important; margin:0;}
+            text-indent:0px;
+            word-wrap:break-word;
+            width:65%;
+            &.submissions{width:75%; margin:0;}
+            margin-right:10%;
+            font-size:25px;
+            font-family: 'Kenyan Coffee';
+            letter-spacing: 1px;
+            line-height:35px;
+            font-style:normal;
+        }
 	}
 }
 
@@ -74,6 +96,12 @@
 	float:right;
 	height:250px;
 	background:white;
+
+    //rounded corners
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* future proofing */
+    -khtml-border-radius: 4px; /* for old Konqueror browsers */
 
     // Set a margin so the box stays at the same place horizontally in affixed mode
 	&.affix { margin-left: 0.7 * @siteWidth;}
@@ -128,9 +156,14 @@
     margin-right:10%;
     &.big {width:90%} //for use on the big "continue" button
     &.small {width:20%;} //for use on the smaller "back" button
-    &.submissions{width:100%;margin:0;}//for use on Become a Retailer, Contact Us
+    &.submissions{width:77%;margin:0;}//for use on Become a Retailer, Contact Us
     div:hover {background: #697a35;}
     .a{display:block;height:100%;}
+    //rounded corners
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* future proofing */
+    -khtml-border-radius: 4px; /* for old Konqueror browsers */
 
 	.button-title
 	{
@@ -138,10 +171,11 @@
         font-weight:normal;
         color:white;
         text-align: center;
-        padding-top:15px;
-        padding-bottom:15px;
+        padding-top:13px;
+        padding-bottom:13px;
         font-size:30px;
         letter-spacing:2px;
+
 	}
 
 	.forward  // " > "
