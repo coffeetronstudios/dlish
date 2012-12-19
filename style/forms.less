@@ -58,6 +58,7 @@
             height:30px;
             &.messages{height:200px; width:75%; margin:0;}
             width:65%;
+            &.small{width:25%;margin-right:330px;}
             &.submissions{width:75%; margin:0;}
             margin-right:10%;
             font-size:25px;
@@ -153,10 +154,9 @@
 {
     background:#b5b5b6;
     float:right;
-    margin-right:10%;
-    &.big {width:90%} //for use on the big "continue" button
-    &.small {width:20%;} //for use on the smaller "back" button
-    &.submissions{width:77%;margin:0;}//for use on Become a Retailer, Contact Us
+    &.big {width:68%; margin-right:62px;} //for use on the big "continue" button
+    &.small {width:20%;float:left; text-align:left;} //for use on the smaller "back" button
+    &.submissions{width:77%;margin:0; float:right;}//for use on Become a Retailer, Contact Us
     div:hover {background: #697a35;}
     .a{display:block;height:100%;}
     //rounded corners
@@ -168,14 +168,17 @@
 	.button-title
 	{
         font-family: 'Bebas Neue';
+        a:active{color:white;text-decoration:none;}
+        a:visited{color:white;text-decoration:none;}
+        a:hover{text-decoration:none;};
         font-weight:normal;
         color:white;
         text-align: center;
-        padding-top:13px;
-        padding-bottom:13px;
+        padding-top:15px;
+        padding-bottom:15px;
         font-size:30px;
         letter-spacing:2px;
-
+        text-decoration:none;
 	}
 
 	.forward  // " > "
@@ -183,6 +186,7 @@
         float:right;
         position:inline-block;
         color:white;
+        text-align:right;
 	}
 }
 
