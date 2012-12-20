@@ -1,0 +1,63 @@
+//drop-down div for header
+//displays the 4 different toffees sold
+
+.drop-down
+{
+	height:125px;
+	width:100%;
+	display:block;
+
+	.drop-down-container
+	{
+		@arrowOffset: 36.5px;
+		@arrowSize: 15px;
+		@dropDownBackgroundColor: #fff;
+
+		width:@siteWidth;
+		margin:0 auto;
+		height:100px;
+		position:relative;
+		background-color: @dropDownBackgroundColor;
+		margin-top: -@arrowSize;
+
+		.product-box //holds name of product and possibly an image later
+		{
+			width:24%;
+			display:inline-block;
+			text-align:center;
+			padding-top:50px;
+			font-family: 'Kenyan Coffee';
+			font-size:25px;
+			color:#6b3417;
+			letter-spacing:1px;
+			&.left{text-align:left;}
+			&.right{text-align:right;}
+
+			.product-name
+			{
+				&.mid-left{margin-right:30px;}
+				&.mid-right{margin-left:70px;}
+			}
+		}
+
+		&:after
+		{
+			bottom: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		&:after
+		{
+			border-color: transparent;
+			border-bottom-color: @dropDownBackgroundColor;
+			border-width: @arrowSize;
+			left: @arrowOffset;
+			margin-left: -@arrowSize;
+		}
+	}
+}
