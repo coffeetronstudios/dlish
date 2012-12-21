@@ -1,13 +1,13 @@
 //drop-down div for header
 //displays the 4 different toffees sold
 
-.drop-down
+.secondary-navigation.toffee
 {
 	height:125px;
 	width:100%;
-	display:block;
+	display: none;
 
-	.drop-down-container
+	.secondary-navigation-container
 	{
 		@arrowOffset: 36.5px;
 		@arrowSize: 15px;
@@ -18,7 +18,6 @@
 		height:100px;
 		position:relative;
 		background-color: @dropDownBackgroundColor;
-		margin-top: -@arrowSize;
 
 		.product-box //holds name of product and possibly an image later
 		{
