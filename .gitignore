@@ -1,2 +1,3 @@
-_site/
-style/css/
+*.html
+css/
+scripts/*-min.js
