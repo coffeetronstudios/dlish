@@ -1,3 +1,0 @@
-name: DLish
-permalink: /:year/:month/:day/:title
-exclude: README.md, billboard.less, fonts.less, footer.less, forms.less, gradients.less, header.less, main-content.less, order-grid.less, product-drop-down.less
