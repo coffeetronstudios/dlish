@@ -3,60 +3,60 @@
 
 .secondary-navigation.toffee
 {
-	height:125px;
-	width:100%;
-	display: none;
+    height:125px;
+    width:100%;
+    display: none;
 
-	.secondary-navigation-container
-	{
-		@arrowOffset: 36.5px;
-		@arrowSize: 15px;
-		@dropDownBackgroundColor: #fff;
+    .secondary-navigation-container
+    {
+        @arrowOffset: 36.5px;
+        @arrowSize: 15px;
+        @dropDownBackgroundColor: #fff;
 
-		width:@siteWidth;
-		margin:0 auto;
-		height:100px;
-		position:relative;
-		background-color: @dropDownBackgroundColor;
+        width:@siteWidth;
+        margin:0 auto;
+        height:100px;
+        position:relative;
+        background-color: @dropDownBackgroundColor;
 
-		.product-box //holds name of product and possibly an image later
-		{
-			width:24%;
-			display:inline-block;
-			text-align:center;
-			padding-top:50px;
-			font-family: 'Kenyan Coffee';
-			font-size:25px;
-			color:#6b3417;
-			letter-spacing:1px;
-			&.left{text-align:left;}
-			&.right{text-align:right;}
+        .product-box //holds name of product and possibly an image later
+        {
+            width:24%;
+            display:inline-block;
+            text-align:center;
+            padding-top:50px;
+            font-family: 'Kenyan Coffee';
+            font-size:25px;
+            color:#6b3417;
+            letter-spacing:1px;
+            &.left{text-align:left;}
+            &.right{text-align:right;}
 
-			.product-name
-			{
-				&.mid-left{margin-right:30px;}
-				&.mid-right{margin-left:70px;}
-			}
-		}
+            .product-name
+            {
+                &.mid-left{margin-right:30px;}
+                &.mid-right{margin-left:70px;}
+            }
+        }
 
-		&:after
-		{
-			bottom: 100%;
-			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-		}
+        &:after
+        {
+            bottom: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
 
-		&:after
-		{
-			border-color: transparent;
-			border-bottom-color: @dropDownBackgroundColor;
-			border-width: @arrowSize;
-			left: @arrowOffset;
-			margin-left: -@arrowSize;
-		}
-	}
+        &:after
+        {
+            border-color: transparent;
+            border-bottom-color: @dropDownBackgroundColor;
+            border-width: @arrowSize;
+            left: @arrowOffset;
+            margin-left: -@arrowSize;
+        }
+    }
 }

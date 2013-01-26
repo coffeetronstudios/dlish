@@ -32,15 +32,15 @@
 //container = form title + form box.
 .form-container
 {
-	display:inline-block;
-	font-size:24px;
-	width:70%;
+    display:inline-block;
+    font-size:24px;
+    width:70%;
     &.submissions{width:100%;}
-	padding-top:30px;
-	padding-bottom:30px;
+    padding-top:30px;
+    padding-bottom:30px;
 
-	.form-title
-	{
+    .form-title
+    {
         color:#838872;
         font-family: 'Bebas Neue';
         float:left;
@@ -48,12 +48,12 @@
         letter-spacing:2px;
         font-size:20px;
         line-height:25px;
-	}
+    }
 
-	.form-box
-	{
-		input
-		{
+    .form-box
+    {
+        input
+        {
             float:right;
             height:30px;
             &.messages{height:200px; width:75%; margin:0;}
@@ -65,7 +65,7 @@
             font-family: 'Kenyan Coffee';
             letter-spacing:1px;
             font-style:normal;
-		}
+        }
 
         textarea
         {
@@ -83,7 +83,7 @@
             line-height:35px;
             font-style:normal;
         }
-	}
+    }
 }
 
 
@@ -93,10 +93,10 @@
 //TODO : make cart-box flow downwards instead of 'jump' on scroll;
 .cart-box
 {
-	width: 0.3 * @siteWidth;
-	float:right;
-	height:250px;
-	background:white;
+    width: 0.3 * @siteWidth;
+    float:right;
+    height:250px;
+    background:white;
 
     //rounded corners
     -moz-border-radius: 4px;
@@ -105,41 +105,41 @@
     -khtml-border-radius: 4px; /* for old Konqueror browsers */
 
     // Set a margin so the box stays at the same place horizontally in affixed mode
-	&.affix { margin-left: 0.7 * @siteWidth;}
+    &.affix { margin-left: 0.7 * @siteWidth;}
 
-	.cart-container
-	{
+    .cart-container
+    {
         font-family: 'Kenyan Coffee';
         font-size:20px;
         letter-spacing:2px;
         padding:20px;
 
-		.cart-line  //wraps cart title and cart amount on 1 line
-		{
-		    .clearfix;
+        .cart-line  //wraps cart title and cart amount on 1 line
+        {
+            .clearfix;
             &.buffer-bottom{padding-bottom:30px;}
             &.buffer-top{padding-top:30px;}
             padding-bottom:15px;
 
-			.cart-sub //sub-total, sales tax, total
-			{
+            .cart-sub //sub-total, sales tax, total
+            {
                 &.black{color:black;} //for use with black titles
                 &.grey{color:grey;}   //for use wih grey titles
                 width:50%;
                 float: left;
-			}
+            }
 
-			.cart-amount  // $ XX . YY
-			{
-			    display: inline-block;
+            .cart-amount  // $ XX . YY
+            {
+                display: inline-block;
                 color:grey;
                 width:45%;
                 float: left;
                 text-align: right;
-			}
-		}
+            }
+        }
 
-	}
+    }
 }
 
 .button-container //helps align the button with the above forms
@@ -165,8 +165,8 @@
     border-radius: 4px; /* future proofing */
     -khtml-border-radius: 4px; /* for old Konqueror browsers */
 
-	.button-title
-	{
+    .button-title
+    {
         font-family: 'Bebas Neue';
         a:active{color:white;text-decoration:none;}
         a:visited{color:white;text-decoration:none;}
@@ -179,15 +179,15 @@
         font-size:30px;
         letter-spacing:2px;
         text-decoration:none;
-	}
+    }
 
-	.forward  // " > "
-	{
+    .forward  // " > "
+    {
         float:right;
         position:inline-block;
         color:white;
         text-align:right;
-	}
+    }
 }
 
 .check-box
@@ -200,9 +200,3 @@
         margin-top:10px;
     }
 }
-
-
-
-
-
-
