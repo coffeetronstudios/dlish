@@ -4,18 +4,24 @@
 // social networking links are outside why-organic-container
 .social
 {
-    max-width: 100%;
+    width: 100%;
     background: white;
     margin-right: 30px;
     margin-left: auto;
     margin-top:10px;
+    height:80px;
+
+         //box shadow TOP
+    -webkit-box-shadow: 0 -5px 15px 1px grey;
+       -moz-box-shadow: 0 -5px 15px 1px grey;
+            box-shadow: 0 -5px 15px 1px grey;
 
     //link for each social networking icon
     .social-link
     {
         background:blue;
         height:30px;
-        width:75px;
+        //width:75px;
         display:inline-block;
         float:right;
         margin-left:5px;
@@ -55,12 +61,6 @@ a:visited{color:grey;}
             {
             font-size:50%;
             line-height: 50px;
-                .GT
-                {
-                display:inline-block;
-                font-size:70%;
-                font-family: 'citizen_slabregular';
-                }
             }
         }
     }
@@ -72,11 +72,11 @@ a:visited{color:grey;}
 }
 
 
-    // generic class to be used as an extension for adding extra buffer space
-    .separator
-    {
-    margin-top: 120px;
-    }
+// generic class to be used as an extension for adding extra buffer space
+.separator
+{
+margin-top: 120px;
+}
 
 
 // all content below billboard or nav
@@ -137,8 +137,8 @@ a:visited{color:grey;}
         color: #868686;
         font-family: 'Lucida Grande';
         font-size: 15px;
-        letter-spacing: 2px;
         line-height: 30px;
+        letter-spacing: 0px;
         padding-top: 25px;
         width:70%;
         }

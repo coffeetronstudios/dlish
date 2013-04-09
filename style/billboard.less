@@ -9,7 +9,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: 5%;
         right: 0;
         max-width: 100%;
         min-width: 1280px;
@@ -29,34 +29,36 @@
         bottom: 0;
         left: 0;
         right: 0;
-        .box-shadow(inset 0 0 20px black);
+        //.box-shadow(inset 0 0 20px black);
 
         // Container for product info div that sits on top of billboard
         .product-details
         {
             @productDetailsWidth: 320px;
             position: absolute;
-            bottom: 30px;
-            right: 30px;
+            bottom: 100px;
+            right: 10%;
             width: @productDetailsWidth;
-            font-family: 'Kenyan Coffee';
 
             // Name of product
             .product-title
             {
-                border-bottom: 1px solid brown;
-                font-size: 32px;
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-                text-transform: lowercase;
+                border-bottom: 1px solid grey;
+                font-size: 4.5em;
+                margin-bottom: 20px;
+                padding-bottom: 30px;
+                //font-family: 'open_sansregular';
+                font-family: 'Bebas Neue';
+                color:#6c3518;
             }
 
             // Description of product, under title
             .product-description
             {
-                font-family: 'Maven Pro';
+                font-family: 'open_sansregular';
                 font-weight: bold;
                 margin-bottom: 30px;
+                color:#6c3518;
             }
 
             // Price, quantity, and Add To Cart
@@ -66,14 +68,20 @@
 
                 .product-price
                 {
-                    background-color: white;
-                    border: 1px solid #E0C1AF;
+                   .brown-gradient;
+                    //border: 1px solid #E0C1AF;
                     float: left;
                     @padding: 15px;
                     padding: @padding;
                     width: (0.6 * @productDetailsWidth) - 4 - (@padding * 2);
                     font-size:24px;
-                    color:#6b3417;
+                    color:#f1e0cc;
+                    letter-spacing:2px;
+                    font-family: 'Bebas Neue';
+
+                    img{
+                        float:right;
+                    }
                 }
 
                 .product-quantity
@@ -85,11 +93,11 @@
                     .box-sizing(content-box);
                     .user-select(none);
 
-                    background-color: white;
+                    .brown-gradient;
                     border: 1px solid #E0C1AF;
-                    color: #333; // TODO: where's this come from?
+                   color:#f1e0cc;
                     float: left;
-                    font-family: 'Kenyan Coffee';
+                    font-family: 'Bebas Neue';
                     height: auto;
                     line-height: 20px; // TODO: where's this come from?
                     margin: 0;
@@ -98,16 +106,18 @@
                     outline: none;
                     @padding: 15px;
                     padding: @padding;
-                    width: (0.4 * @productDetailsWidth) - 4 - (@padding * 2) - @marginLeft;
-                    color:6b3417;
+                    width: (0.4 * @productDetailsWidth) - (@padding * 2) - @marginLeft;
                     font-size:24px;
+
+                    img{
+                        float:right;
+                    }
                 }
 
                 // Add to Cart button
                 .add-to-cart
                 {
                     .brown-gradient;
-                    color: white;
                     cursor: pointer;
                     font-family: 'Bebas Neue';
                     float: left;
@@ -117,8 +127,8 @@
                     width: @productDetailsWidth - (@padding * 2);
                     font-size:24px;
                     letter-spacing: 2px;
-                    color:#efece2;
-                    
+                    color:#f1e0cc;
+                    div:hover {background: #697a35;}
                 }
             }
         }
