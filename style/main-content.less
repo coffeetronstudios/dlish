@@ -1,20 +1,19 @@
-
+body{
+    min-width:1200px;
+}
 
 
 // social networking links are outside why-organic-container
 .social
 {
+    position: relative;
     width: 100%;
     background: white;
     margin-right: 30px;
     margin-left: auto;
-    margin-top:10px;
     height:80px;
 
-         //box shadow TOP
-    -webkit-box-shadow: 0 -5px 15px 1px grey;
-       -moz-box-shadow: 0 -5px 15px 1px grey;
-            box-shadow: 0 -5px 15px 1px grey;
+    .box-shadow(0 -1px 40px 1px #a9a9a9);
 
     //link for each social networking icon
     .social-link
@@ -93,6 +92,35 @@ margin-top: 120px;
 
     .main-content-container
     {
+        .thumbnail
+        {
+            float:left;
+           // border:3px solid red;
+            height:auto;
+            width:50%;
+            border:0;
+            outline:none;
+            padding-bottom:0.3px;
+            a img{outline:none;}
+            &.works{padding-bottom:0.5px;}
+            &.totally-nuts{padding-bottom:0.5px;}
+            &.bare-naked{padding-bottom:1px;}
+        }
+
+
+        .thumbnail-title
+        {
+            display:block;
+           font-family: 'Kenyan Coffee';
+           font-size:30px;
+           color:#8b541d;
+           clear:left;
+           margin-bottom:80px;
+             a:hover{text-decoration:border-bottom 5px solid #7b5736;}
+             a:link,a:visited,
+             a:active{text-decoration: none; color:#f1e0cc;}
+        }
+
         padding-top:100px;
         padding-bottom:100px;
         //for use on text-based pages like Guarantee, Shipping, Etc.
@@ -110,12 +138,11 @@ margin-top: 120px;
         line-height: normal;
         margin:0 auto;
         //colors for different title-heads
-        &.grey{color:#777777;
+        &.grey {color:#777777;}
         &.black{color:black;}
         }
 
-
-        .line  //TODO : change width of line so end at it ends at the 's' in 'Articles' in Nav
+        .line 
         {
         display: block;
         /* Gradient color1 - color2 - color1 */
@@ -130,6 +157,8 @@ margin-top: 120px;
         margin-bottom:20px;
         &.long {width:70%;}
         &.short {width:100%;}
+        clear:left;
+        padding-top:0;
         }
 
         .header-copy
@@ -141,11 +170,9 @@ margin-top: 120px;
         letter-spacing: 0px;
         padding-top: 25px;
         width:70%;
+        &.about{padding-top:0px; padding-bottom:30px;}
         }
     }
-}
-
-
 }
 
 
@@ -161,21 +188,6 @@ margin-top: 120px;
         width:100%;
         margin:0 auto;
         height:500px;
-
-         //font colors for content blocks
-        @green:#6e8037;
-        @cream:#f9faea;
-        @grey:#777777;
-        @tan:#eedec2;
-
-        //background and font colors for content blocks
-        &.green{.green-gradient; color:@cream;}
-        &.grey{.pollution-gradient; color:@gray;}
-        &.light-grey{.light-grey-gradient; color:@grey;}
-        &.brown{.header-gradient; color:@tan;}
-        &.cream{.cream-gradient; color: @green;}
-
-
 
         //serves as container for background color, block-text, and block-image
         .content-block-container
@@ -222,12 +234,8 @@ margin-top: 120px;
             display:block;
             }
 
-        }
-    }
+        }//end content block container
 
-}
+    }//end content block
 
-#map_canvas
-{
-
-}
+}//end list container

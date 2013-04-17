@@ -16,6 +16,7 @@
         height: @productImageHeight;
         overflow: hidden;
 
+
         img
         {
             min-height: @productImageHeight;
@@ -49,7 +50,7 @@
                 padding-bottom: 30px;
                 //font-family: 'open_sansregular';
                 font-family: 'Bebas Neue';
-                color:#6c3518;
+                color:#8b541d;
             }
 
             // Description of product, under title
@@ -98,8 +99,7 @@
                    color:#f1e0cc;
                     float: left;
                     font-family: 'Bebas Neue';
-                    height: auto;
-                    line-height: 20px; // TODO: where's this come from?
+                    height: 20px;
                     margin: 0;
                     @marginLeft: 10px;
                     margin-left: @marginLeft;
@@ -108,9 +108,12 @@
                     padding: @padding;
                     width: (0.4 * @productDetailsWidth) - (@padding * 2) - @marginLeft;
                     font-size:24px;
+                    margin-top:-1px;
 
                     img{
                         float:right;
+                        height:auto;
+                        width:16%;
                     }
                 }
 
@@ -127,8 +130,16 @@
                     width: @productDetailsWidth - (@padding * 2);
                     font-size:24px;
                     letter-spacing: 2px;
-                    color:#f1e0cc;
                     div:hover {background: #697a35;}
+                    a:link,a:visited,a:hover,
+                    a:active{text-decoration: none; color:#f1e0cc;}
+
+                    img{
+                        float:right;
+                        height:auto;
+                        width:5%;
+                        padding-top:3px;
+                    }
                 }
             }
         }
