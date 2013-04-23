@@ -6,20 +6,19 @@ body{
 // social networking links are outside why-organic-container
 .social
 {
+    @socialBarHeight: 80px;
     position: relative;
     width: 100%;
     background: white;
     margin-right: 30px;
     margin-left: auto;
-    height:80px;
+    height:@socialBarHeight;
 
     .box-shadow(0 -1px 40px 1px #a9a9a9);
 
     //link for each social networking icon
     .social-link
     {
-        background:blue;
-        height:30px;
         //width:75px;
         display:inline-block;
         float:right;
@@ -27,6 +26,9 @@ body{
         margin-right:5px;
         color:white;
     }
+
+    .facebook, .twitter { margin-top: (@socialBarHeight - 20px) / 2; }
+    .google-plus { margin-top: (@socialBarHeight - 24px) / 2; }
 }
 
 // "More" content on right side of page
@@ -142,7 +144,7 @@ margin-top: 120px;
         &.black{color:black;}
         }
 
-        .line 
+        .line
         {
         display: block;
         /* Gradient color1 - color2 - color1 */
