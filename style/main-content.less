@@ -10,11 +10,17 @@ body{
     position: relative;
     width: 100%;
     background: white;
-    margin-right: 30px;
+    margin-right: 13%;
     margin-left: auto;
     height:@socialBarHeight;
-
     .box-shadow(0 -1px 40px 1px #a9a9a9);
+
+.social-button-container
+{
+
+    margin-right:5.3%;
+    float:right;
+    width:50%;
 
     //link for each social networking icon
     .social-link
@@ -23,9 +29,11 @@ body{
         display:inline-block;
         float:right;
         margin-left:5px;
-        margin-right:5px;
+        margin-right:3.5%;
         color:white;
+        iframe{border:0;}
     }
+}
 
     .facebook, .twitter { margin-top: (@socialBarHeight - 20px) / 2; }
     .google-plus { margin-top: (@socialBarHeight - 24px) / 2; }
@@ -62,6 +70,7 @@ a:visited{color:grey;}
             {
             font-size:50%;
             line-height: 50px;
+            a{text-decoration: none; color:#777777;}
             }
         }
     }
