@@ -3,20 +3,11 @@
     @productImageHeight: 500px;
     height: @productImageHeight;
     position: relative;
+    width:1225px;
+    margin:auto;
 
     .product-image
     {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 5%;
-        right: 0;
-        max-width: 100%;
-        min-width: 1280px;
-        height: @productImageHeight;
-        overflow: hidden;
-
-
         img
         {
             min-height: @productImageHeight;
@@ -36,9 +27,8 @@
         .product-details
         {
             @productDetailsWidth: 320px;
-            position: absolute;
-            bottom: 100px;
-            right: 10%;
+            margin-top:80px;
+            margin-left:auto;
             width: @productDetailsWidth;
 
             // Name of product
